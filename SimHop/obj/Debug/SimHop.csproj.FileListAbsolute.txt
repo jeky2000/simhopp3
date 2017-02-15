@@ -15,3 +15,6 @@ C:\Users\Semthan\Documents\Computer Engineering\System\Code\SimHop\SimHop\obj\De
 C:\Users\Semthan\Documents\Computer Engineering\System\Code\Simhopp\simhopp2020\SimHop\bin\Debug\SimHop.exe.config
 C:\Users\Semthan\Documents\Computer Engineering\System\Code\Simhopp\simhopp2020\SimHop\obj\Debug\SimHop.exe
 C:\Users\Semthan\Documents\Computer Engineering\System\Code\Simhopp\simhopp2020\SimHop\obj\Debug\SimHop.pdb
+C:\Users\abdullah\Desktop\xxxxxnxx\SimHop\bin\Debug\SimHop.exe.config
+C:\Users\abdullah\Desktop\xxxxxnxx\SimHop\obj\Debug\SimHop.exe
+C:\Users\abdullah\Desktop\xxxxxnxx\SimHop\obj\Debug\SimHop.pdb
