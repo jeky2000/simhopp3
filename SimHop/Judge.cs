@@ -8,7 +8,7 @@ namespace SimHop
 {
     public class Judge
     {
-    // Judge nummer 1 heter hello world
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public List<Judge> judges { get; set; } = new List<Judge>();
