@@ -21,3 +21,6 @@ C:\Users\abdullah\Desktop\xxxxxnxx\SimHop\obj\Debug\SimHop.pdb
 C:\Users\Son Nguyen\Desktop\Github\SimHop\bin\Debug\SimHop.exe.config
 C:\Users\Son Nguyen\Desktop\Github\SimHop\obj\Debug\SimHop.exe
 C:\Users\Son Nguyen\Desktop\Github\SimHop\obj\Debug\SimHop.pdb
+C:\Users\abdullah\Desktop\mmmmmm\SimHop\bin\Debug\SimHop.exe.config
+C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.exe
+C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.pdb
