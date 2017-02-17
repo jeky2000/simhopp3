@@ -25,15 +25,15 @@ namespace SimHop
         //    var rating = Tuple.Create(this, _points);
         //    _jump.judges.Add(rating);
         //}
-        public void AddJudge(Judge j)
-        {
-            judges.Add(j);
-        }
+        //public void AddJudge(Judge j)
+        //{
+        //    judges.Add(j);
+        //}
 
-        public void removejudge(int index)
-        {
-            judges.RemoveAt(index);
-        }
+        //public void removejudge(int index)
+        //{
+        //    judges.RemoveAt(index);
+        //}
 
         //-----------------
     }

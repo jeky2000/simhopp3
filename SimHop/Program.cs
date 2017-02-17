@@ -17,16 +17,17 @@ namespace SimHop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            from1 form = new from1();
+            Tournament tr1 = new Tournament();
+            Admin admin = new Admin();
+            admin.Hide();
+            from1 form = new from1(tr1, admin);
             Application.Run(form);
 
-            //Admin admin = new Admin();
+            Tournament tr = new Tournament();
+            PresenterForm pre = new PresenterForm(admin, tr);
+            Application.Run(admin);
 
-            //Tournament tr = new Tournament();
-            //PresenterForm pre = new PresenterForm(admin, tr);
-            //Application.Run(admin);
 
-          
 
         }
     }

@@ -16,8 +16,12 @@ namespace SimHop
     public partial class from1 : Form 
     {
         //private int _row = -1;
-        public from1()
+        public from1(Tournament tr, Admin a)
         {
+            Admin admin = new Admin();
+           
+
+             
             InitializeComponent();
         }
 

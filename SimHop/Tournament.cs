@@ -15,10 +15,12 @@ using System.Data.SqlClient;
 using System.Data;
 namespace SimHop
 {
+    
+
     [Serializable()]
     public class Tournament :ITournament
     {
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\systemutvecklingc#\DataB.mdf;Integrated Security=True;Connect Timeout=30");
+        //SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\systemutvecklingc#\DataB.mdf;Integrated Security=True;Connect Timeout=30");
         private Collection<Diver> _list;
         public Collection<Diver> List
         {
@@ -49,12 +51,8 @@ namespace SimHop
 
             XmlSerializer xs = new XmlSerializer(typeof(Tournament));
             xs.Serialize(stream, this);
-
             stream.Close();
            
-
-
-
             //sqlcon.Close();
 
         }

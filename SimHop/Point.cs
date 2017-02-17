@@ -7,6 +7,14 @@ using System.ComponentModel;
 
 namespace SimHop
 {
+    //[Serializable()]
+    //public class Tpl
+    //{
+    //    public Judge Judge { get; set; }
+    //    public double Point { get; set; }
+    //}
+
+    [Serializable]
     public class Point : INotifyPropertyChanged, IComparable<Point>
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -17,7 +25,7 @@ namespace SimHop
         {
             
         }
-       // public List<Tuple<Judge, double>> judges = new List<Tuple<Judge, double>>();
+       // public List<Tpl> judges = new List<Tpl>();
 
         // public int id { get; set; }
 

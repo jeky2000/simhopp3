@@ -26,9 +26,9 @@ C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.exe
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.pdb
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\bin\Debug\SimHop.exe
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\bin\Debug\SimHop.pdb
-C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.csprojResolveAssemblyReference.cache
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.Admin.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.Domare.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.from1.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.Properties.Resources.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.csproj.GenerateResource.Cache
+C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.csprojResolveAssemblyReference.cache

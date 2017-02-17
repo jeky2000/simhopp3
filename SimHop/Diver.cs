@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
+using System.Threading.Tasks;
 using System.ComponentModel;
 namespace SimHop
 {
@@ -25,11 +25,13 @@ namespace SimHop
             this.Dive = dive;
 
         }
-        public void Hopp()
-        {
-            Point jump = new Point();
-            hopp.Add(jump);
-        }
+        //_--------------------
+        //public void Hopp()
+        //{
+        //    Point jump = new Point();
+        //    hopp.Add(jump);
+        //}
+        //_--------------------
         public string _firstname;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -114,26 +116,20 @@ namespace SimHop
 
         //    foreach (var jump in hopp)
         //    {
-        //        foreach (var points in jump.points)
+        //        foreach (var judges in jump.judges)
         //        {
 
-        //            sumPoint += points.Item2;
-        //            if (points.Item2 < min)
-        //                min = points.Item2;
+        //            sumPoint += judges.Item2;
+        //            if (judges.Item2 < min)
+        //                min = judges.Item2;
 
-        //            if (points.Item2 > max)
-        //                max = points.Item2;
-
-
-
+        //            if (judges.Item2 > max)
+        //                max = judges.Item2;
         //            sum = sumPoint - max - min;
         //            count += 1;
 
         //        }
         //    }
-
-
-
 
         //    double jumppoint = sum / (count - 2);
         //    return jumppoint;

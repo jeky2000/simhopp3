@@ -7,3 +7,12 @@ D:\systemutvecklingc#\SimHop\SimHopTests1\bin\Debug\Microsoft.VisualStudio.Quali
 D:\systemutvecklingc#\SimHop\SimHopTests1\obj\Debug\SimHopTests1.csprojResolveAssemblyReference.cache
 D:\systemutvecklingc#\SimHop\SimHopTests1\obj\Debug\SimHopTests1.dll
 D:\systemutvecklingc#\SimHop\SimHopTests1\obj\Debug\SimHopTests1.pdb
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\obj\Debug\SimHopTests1.csprojResolveAssemblyReference.cache
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\obj\Debug\SimHopTests1.dll
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\obj\Debug\SimHopTests1.pdb
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\SimHopTests1.dll
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\SimHopTests1.pdb
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\SimHop.exe
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\SimHop.pdb
+C:\Users\abdullah\Desktop\mmmmmm\SimHopTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

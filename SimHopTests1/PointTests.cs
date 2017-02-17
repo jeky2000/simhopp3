@@ -57,11 +57,11 @@
 
 
 //            //tittar ifall diver1 har fått poäng
-//            Assert.AreEqual(diver1.hopp[0].points[0].Item2, 2);//item1=judge, item2=double som är points
-//            Assert.AreEqual(diver1.hopp[0].points[1].Item2, 3);
-//            Assert.AreEqual(diver1.hopp[0].points[2].Item2, 4);
-//            Assert.AreEqual(diver1.hopp[0].points[3].Item2, 5);
-//            Assert.AreEqual(diver1.hopp[0].points[4].Item2, 6);
+//            Assert.AreEqual(diver1.hopp[0].judges[0].Item2, 2);//item1=judge, item2=double som är points
+//            Assert.AreEqual(diver1.hopp[0].judges[1].Item2, 3);
+//            Assert.AreEqual(diver1.hopp[0].judges[2].Item2, 4);
+//            Assert.AreEqual(diver1.hopp[0].judges[3].Item2, 5);
+//            Assert.AreEqual(diver1.hopp[0].judges[4].Item2, 6);
 
 
 //            //fråga kjell varför våra hopp inte funkar även fast vi får in poängen

@@ -3,35 +3,11 @@
   <List>
     <Diver>
       <hopp />
-      <_firstname>asdasdasd</_firstname>
-      <FirstName>asdasdasd</FirstName>
-      <LastName>sad</LastName>
-      <Dateofbirth>21312</Dateofbirth>
-      <Dive>0</Dive>
-    </Diver>
-    <Diver>
-      <hopp />
-      <_firstname>son</_firstname>
-      <FirstName>son</FirstName>
-      <LastName>21</LastName>
-      <Dateofbirth>211</Dateofbirth>
-      <Dive>0</Dive>
-    </Diver>
-    <Diver>
-      <hopp />
-      <_firstname>jek</_firstname>
-      <FirstName>jek</FirstName>
-      <LastName>hasdas</LastName>
-      <Dateofbirth>jfmada</Dateofbirth>
-      <Dive>8217</Dive>
-    </Diver>
-    <Diver>
-      <hopp />
-      <_firstname>sarmad</_firstname>
-      <FirstName>sarmad</FirstName>
-      <LastName>wqedqd</LastName>
-      <Dateofbirth>1231</Dateofbirth>
-      <Dive>0</Dive>
+      <_firstname>qwqeqwe</_firstname>
+      <FirstName>qwqeqwe</FirstName>
+      <LastName>weqweqw</LastName>
+      <Dateofbirth>234234</Dateofbirth>
+      <Dive>2</Dive>
     </Diver>
   </List>
 </Tournament>
