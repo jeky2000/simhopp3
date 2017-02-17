@@ -26,11 +26,11 @@ namespace SimHop
 
         }
         //_--------------------
-        //public void Hopp()
-        //{
-        //    Point jump = new Point();
-        //    hopp.Add(jump);
-        //}
+        public void Hopp()
+        {
+            Point jump = new Point();
+            hopp.Add(jump);
+        }
         //_--------------------
         public string _firstname;
 
@@ -104,36 +104,36 @@ namespace SimHop
             else
                 return c;
         }
-        //public double calculate(Point Hopp)
-        //{
-        //    int count = 0;
-        //    double sumPoint = 0;
-        //    double max = 0;
-        //    double min = int.MaxValue;
-        //    double sum = 0;
+        public double calculate(Point Hopp)
+        {
+            int count = 0;
+            double sumPoint = 0;
+            double max = 0;
+            double min = int.MaxValue;
+            double sum = 0;
 
 
 
-        //    foreach (var jump in hopp)
-        //    {
-        //        foreach (var judges in jump.judges)
-        //        {
+            foreach (var jump in hopp)
+            {
+                foreach (var judges in jump.judges)
+                {
 
-        //            sumPoint += judges.Item2;
-        //            if (judges.Item2 < min)
-        //                min = judges.Item2;
+                    sumPoint += judges.Item2;
+                    if (judges.Item2 < min)
+                        min = judges.Item2;
 
-        //            if (judges.Item2 > max)
-        //                max = judges.Item2;
-        //            sum = sumPoint - max - min;
-        //            count += 1;
+                    if (judges.Item2 > max)
+                        max = judges.Item2;
+                    sum = sumPoint - max - min;
+                    count += 1;
 
-        //        }
-        //    }
+                }
+            }
 
-        //    double jumppoint = sum / (count - 2);
-        //    return jumppoint;
-        //}
+            double jumppoint = sum / (count - 2);
+            return jumppoint;
+        }
         ////-----------------
     }
 

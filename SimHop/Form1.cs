@@ -16,20 +16,18 @@ namespace SimHop
     public partial class from1 : Form 
     {
         //private int _row = -1;
-        public from1(Tournament tr, Admin a)
+        public from1()
         {
-            Admin admin = new Admin();
-           
-
              
             InitializeComponent();
         }
 
         private void btnadmin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Admin ad = new Admin();
-            ad.Show();
+
+            this.Close();
+                Admin ad = new Admin();
+                ad.Show();
 
         }
 
