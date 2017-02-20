@@ -15,7 +15,7 @@ namespace SimHop.Tests
         public void PointTest()
         {
             Diver diver1 = new Diver();
-
+            Diver diver2 = new Diver();
 
             Judge judge1 = new Judge();
             Judge judge2 = new Judge();
@@ -25,6 +25,9 @@ namespace SimHop.Tests
 
             diver1.FirstName = "jek";
             diver1.LastName = "rohan";
+
+            diver2.FirstName = "son";
+            diver2.LastName = "nygren";
 
 
 
@@ -45,6 +48,7 @@ namespace SimHop.Tests
             judge5.LastName = "Nywqeasren";
 
             diver1.Hopp();
+            diver2.Hopp();
 
             judge1.rate(diver1.hopp[0], 2);
             judge2.rate(diver1.hopp[0], 3);
@@ -52,8 +56,15 @@ namespace SimHop.Tests
             judge4.rate(diver1.hopp[0], 5);
             judge5.rate(diver1.hopp[0], 6);
 
+            judge1.rate(diver2.hopp[0], 2);
+            judge2.rate(diver2.hopp[0], 15);
+            judge3.rate(diver2.hopp[0], 15);
+            judge4.rate(diver2.hopp[0], 30);
+            judge5.rate(diver2.hopp[0], 60);
+
 
             diver1.calculate(diver1.hopp[0]);
+            diver2.calculate(diver2.hopp[0]);
 
 
             //tittar ifall diver1 har fått poäng
@@ -63,10 +74,17 @@ namespace SimHop.Tests
             Assert.AreEqual(diver1.hopp[0].judges[3].Item2, 5);
             Assert.AreEqual(diver1.hopp[0].judges[4].Item2, 6);
 
+            Assert.AreEqual(diver2.hopp[0].judges[0].Item2, 2);//item1=judge, item2=double som är points
+            Assert.AreEqual(diver2.hopp[0].judges[1].Item2, 15);
+            Assert.AreEqual(diver2.hopp[0].judges[2].Item2, 15);
+            Assert.AreEqual(diver2.hopp[0].judges[3].Item2, 30);
+            Assert.AreEqual(diver2.hopp[0].judges[4].Item2, 60);
+
 
             //fråga kjell varför våra hopp inte funkar även fast vi får in poängen
 
             Assert.AreEqual(4, diver1.calculate(diver1.hopp[0]));
+            Assert.AreEqual(20, diver2.calculate(diver2.hopp[0]));
 
         }
 

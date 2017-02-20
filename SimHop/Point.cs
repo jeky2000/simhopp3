@@ -20,12 +20,13 @@ namespace SimHop
         public event PropertyChangedEventHandler PropertyChanged;
 
         //constructor
+        public List<Tuple<Judge, double>> judges = new List<Tuple<Judge, double>>();
         public List<Point> points = new List<Point>();
         public Point()
         {
             
         }
-        public List<Tpl> judges = new List<Tpl>();
+       // public List<Tpl> judges = new List<Tpl>();
 
         // public int id { get; set; }
 
