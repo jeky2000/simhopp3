@@ -32,7 +32,6 @@ C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.from1.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.Properties.Resources.resources
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.csproj.GenerateResource.Cache
 C:\Users\abdullah\Desktop\mmmmmm\SimHop\obj\Debug\SimHop.csprojResolveAssemblyReference.cache
-C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.csprojResolveAssemblyReference.cache
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.Admin.resources
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.Domare.resources
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.from1.resources
@@ -45,3 +44,5 @@ C:\Users\Son Nguyen\Desktop\Git1\SimHop\bin\Debug\SimHop.exe
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\bin\Debug\SimHop.pdb
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\bin\Debug\Simhoppdb.mdf
 C:\Users\Son Nguyen\Desktop\Git1\SimHop\bin\Debug\Simhoppdb_log.ldf
+C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.AdminLogin.resources
+C:\Users\Son Nguyen\Desktop\Git1\SimHop\obj\Debug\SimHop.JudgeLogin.resources

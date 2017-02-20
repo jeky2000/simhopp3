@@ -13,12 +13,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.XmlConfiguration;
 using System.Data.SqlClient;
 using System.Data;
+
 namespace SimHop
 {
     
 
     [Serializable()]
-    public class Tournament :ITournament
+    public partial class Tournament:Admin ,ITournament
     {
         //SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\systemutvecklingc#\DataB.mdf;Integrated Security=True;Connect Timeout=30");
         private Collection<Diver> _list;
@@ -56,21 +57,31 @@ namespace SimHop
             //sqlcon.Close();
 
         }
-
+        
+      
         public void ReadFromFile()
         {
-            Stream stream = new FileStream("divers.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
-          
-            XmlSerializer xs = new XmlSerializer(typeof(Tournament));
-            Tournament tr = (Tournament)xs.Deserialize(stream);
-          
-            _list.Clear();
-            foreach (var diver in tr.List)
-            {
-                _list.Add(diver);
+           
 
-            }
-            stream.Close();
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Son Nguyen\Desktop\Git1\SimHop\Simhoppdb.mdf;Integrated Security = True");
+            con.Open();
+            SqlDataAdapter divers = new SqlDataAdapter("select * from Diver", con);
+            DataTable dt = new DataTable();
+            divers.Fill(dt);
+            this.dataGridView1.DataSource = dt;
+
+            //Stream stream = new FileStream("divers.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
+
+            //XmlSerializer xs = new XmlSerializer(typeof(Tournament));
+            //Tournament tr = (Tournament)xs.Deserialize(stream);
+
+            //_list.Clear();
+            //foreach (var diver in tr.List)
+            //{
+            //    _list.Add(diver);
+
+            //}
+            //stream.Close();
         }
     }
 

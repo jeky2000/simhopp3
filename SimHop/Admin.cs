@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections.ObjectModel;
+using System.Data.SqlClient;
 
 namespace SimHop
 {
@@ -34,6 +35,7 @@ namespace SimHop
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataGridView1.AutoGenerateColumns = false;
             this._row = e.RowIndex;
         }
 
@@ -67,6 +69,20 @@ namespace SimHop
         {
             if (this.EventRead != null)
                 this.EventRead();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Son Nguyen\Desktop\Git1\SimHop\Simhoppdb.mdf;Integrated Security = True");
+            con.Open();
+            SqlDataAdapter divers = new SqlDataAdapter("select * from Diver", con);
+            DataTable dt = new DataTable();
+            divers.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
         }
     }
 }

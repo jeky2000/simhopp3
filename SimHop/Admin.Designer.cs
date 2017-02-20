@@ -41,6 +41,7 @@
             this.labellastname = new System.Windows.Forms.Label();
             this.labeldateofbirth = new System.Windows.Forms.Label();
             this.labeldive = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,11 +159,22 @@
             this.labeldive.TabIndex = 6;
             this.labeldive.Text = "Dive";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(63, 454);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 56);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 695);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labeldive);
             this.Controls.Add(this.labeldateofbirth);
             this.Controls.Add(this.labellastname);
@@ -188,7 +200,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnremove;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnread;
@@ -200,5 +211,7 @@
         private System.Windows.Forms.Label labellastname;
         private System.Windows.Forms.Label labeldateofbirth;
         private System.Windows.Forms.Label labeldive;
+        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

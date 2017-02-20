@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections.ObjectModel;
+using System.Data.SqlClient;
 
 namespace SimHop
 {
@@ -25,9 +26,9 @@ namespace SimHop
         private void btnadmin_Click(object sender, EventArgs e)
         {
 
-            this.Close();
-                Admin ad = new Admin();
-                ad.Show();
+            //this.Close();
+            AdminLogin log = new AdminLogin();
+            log.Show();
 
         }
 
@@ -39,8 +40,15 @@ namespace SimHop
 
         private void btnjudge_Click(object sender, EventArgs e)
         {
-            Domare d = new Domare();
-            d.Show();
+
+            JudgeLogin log = new JudgeLogin();
+            log.Show();
+        }
+        
+        private void from1_Load(object sender, EventArgs e)
+        {
+           
+            
         }
 
         //private void btnadd_Click(object sender, EventArgs e)

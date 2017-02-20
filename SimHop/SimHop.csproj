@@ -83,6 +83,18 @@
     <Compile Include="IForm.cs" />
     <Compile Include="ITournament.cs" />
     <Compile Include="Judge.cs" />
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JudgeLogin.Designer.cs">
+      <DependentUpon>JudgeLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Point.cs" />
     <Compile Include="PresenterForm.cs" />
     <Compile Include="Program.cs" />
@@ -92,7 +104,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SimhoppdbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Tournament.cs" />
+    <Compile Include="Tournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JudgeLogin.resx">
+      <DependentUpon>JudgeLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
