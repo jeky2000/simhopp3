@@ -20,12 +20,11 @@ namespace SimHop
 
 
             from1 form = new from1();
+            
+            Admin admin = new Admin();
+            Tournament tr = new Tournament();
+            PresenterForm pre = new PresenterForm(admin, tr, form);
             Application.Run(form);
-            form.Close();
-            //Admin admin = new Admin();
-            //Tournament tr = new Tournament();
-            //PresenterForm pre = new PresenterForm(admin, tr);
-            //Application.Run(admin);
 
 
 

@@ -26,3 +26,4 @@ C:\Users\Son Nguyen\Desktop\Git1\SimHopTests1\bin\Debug\SimHop.exe
 C:\Users\Son Nguyen\Desktop\Git1\SimHopTests1\bin\Debug\SimHop.pdb
 C:\Users\Son Nguyen\Desktop\Git1\SimHopTests1\bin\Debug\Simhoppdb.mdf
 C:\Users\Son Nguyen\Desktop\Git1\SimHopTests1\bin\Debug\Simhoppdb_log.ldf
+C:\Users\abdullah\Desktop\simhop1\SimHopTests1\obj\Debug\SimHopTests1.csprojResolveAssemblyReference.cache

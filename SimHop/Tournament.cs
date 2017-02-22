@@ -11,17 +11,16 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.XmlConfiguration;
-using System.Data.SqlClient;
-using System.Data;
+
 
 namespace SimHop
 {
-    
+
 
     [Serializable()]
-    public partial class Tournament:Admin ,ITournament
+    public partial class Tournament : ITournament
     {
-        //SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\systemutvecklingc#\DataB.mdf;Integrated Security=True;Connect Timeout=30");
+
         private Collection<Diver> _list;
         public Collection<Diver> List
         {
@@ -35,11 +34,12 @@ namespace SimHop
         {
             List = new BindingList<Diver>();
         }
-     
+
         public void Add(Diver diver)
         {
             _list.Add(diver);
         }
+
 
         public void Remove(int index)
         {
@@ -48,27 +48,34 @@ namespace SimHop
 
         public void SaveToFile()
         {
-            Stream stream = new FileStream("divers.xml", FileMode.Create, FileAccess.Write, FileShare.Write);
+            //Stream stream = new FileStream("divers.xml", FileMode.Create, FileAccess.Write, FileShare.Write);
 
-            XmlSerializer xs = new XmlSerializer(typeof(Tournament));
-            xs.Serialize(stream, this);
-            stream.Close();
-           
+            //XmlSerializer xs = new XmlSerializer(typeof(Tournament));
+            //xs.Serialize(stream, this);
+            //stream.Close();
+
             //sqlcon.Close();
 
         }
-        
-      
-        public void ReadFromFile()
-        {
-           
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Son Nguyen\Desktop\Git1\SimHop\Simhoppdb.mdf;Integrated Security = True");
-            con.Open();
-            SqlDataAdapter divers = new SqlDataAdapter("select * from Diver", con);
+        void ITournament.update()
+        {
+            Connection.ActiveCon();
+        }
+        public void update()
+        {
+            Connection con = new Connection();
+            SqlDataAdapter divers = new SqlDataAdapter("select * from Diver", con.ActiveCon());
             DataTable dt = new DataTable();
             divers.Fill(dt);
-            this.dataGridView1.DataSource = dt;
+            dataGridView1.DataSource = dt;
+
+        }
+
+
+        public void ReadFromFile()
+        {
+            //retrive data from dáta base
 
             //Stream stream = new FileStream("divers.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
