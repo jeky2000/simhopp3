@@ -8,26 +8,28 @@ namespace SimHop
 {
     public class PresenterForm
     {
-        
-        public IForm _view { get; set; }
+        public IAdmin _view { get; set; }
+        public IForm _look { get; set; }
         public ITournament _model { get; set; }
-        public PresenterForm(IForm view, Tournament tr)
+        public PresenterForm( Tournament tr,IAdmin view )
 
         {
             this._model = tr;
             this._view = view;
+            //this._look = look;
             //connect to database
             this._model.update();
-
+            
 
             this._view.AddToDiverList(tr.List);
 
             
             this._view.EventAdd += Add;
             this._view.EventDelete += DeleteDiver;
-            this._view.EventRead += ReadFromFile;
+            this._view.EventUpdate += ReadFromFile;
             this._view.EventSave += SaveToFile;
 
+            #region Add, Delete, save, read
 
         }
         public void Add()
@@ -46,6 +48,6 @@ namespace SimHop
         {
             this._model.ReadFromFile();
         }
-        
+        #endregion
     }
 }

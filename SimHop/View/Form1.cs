@@ -34,8 +34,8 @@ namespace SimHop
 
         private void btnguest_Click(object sender, EventArgs e)
         {
-            Admin ad = new Admin();
-            ad.Show();
+            Guest gu = new Guest();
+            gu.Show();
         }
 
         private void btnjudge_Click(object sender, EventArgs e)
@@ -49,6 +49,11 @@ namespace SimHop
         {
            
             
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         //private void btnadd_Click(object sender, EventArgs e)

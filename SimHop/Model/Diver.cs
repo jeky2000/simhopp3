@@ -11,18 +11,19 @@ namespace SimHop
         public List<Point> hopp = new List<Point>();
         #region Constructor
         //constroctor
-        public Diver():this("","","",0)
+        public Diver() : this("", "", "", 0, 0)
         {
-              
+
         }
         //public List<Tuple<Judge, double>> judges = new List<Tuple<Judge, double>>();
         //constructor overloaded
-        public Diver(string firstname, string lastname, string dateofbirth, int dive)
+        public Diver(string firstname, string lastname, string dateofbirth, int dive, int result)
         {
             this.FirstName = firstname;
             this.LastName = lastname;
             this.Dateofbirth = dateofbirth;
             this.Dive = dive;
+            this.Result = result;
 
         }
         //_--------------------
@@ -93,6 +94,20 @@ namespace SimHop
                     this.PropertyChanged(this, new PropertyChangedEventArgs("Dive"));
             }
         }
+        private int _result;
+        public int Result
+        {
+            get
+            {
+                return _result;
+            }
+            set
+            {
+                _result = value;
+                if (this.PropertyChanged != null)
+                    this.PropertyChanged(this, new PropertyChangedEventArgs("Result"));
+            }
+        }
         #endregion
 
 
@@ -104,38 +119,56 @@ namespace SimHop
             else
                 return c;
         }
-        public double calculate(Point Hopp)
+        public string calculatetextbox(double judge1, double judge2, double judge3, double judge4, double judge5, double judge6)
         {
             int count = 0;
             double sumPoint = 0;
             double max = 0;
             double min = int.MaxValue;
             double sum = 0;
+            double jumppoint = 0;
 
 
-
-            foreach (var jump in hopp)
+            if (true)
             {
-                foreach (var judges in jump.judges)
+
+                double[] array = { judge1, judge2, judge3, judge4, judge5, judge6 };
+                for (int i = 0; i < 5; i++)
                 {
+                    sumPoint += array[i];
+                    if (array[i] < min)
+                        min = array[i];
 
-                    sumPoint += judges.Item2;
-                    if (judges.Item2 < min)
-                        min = judges.Item2;
-
-                    if (judges.Item2 > max)
-                        max = judges.Item2;
+                    if (array[i] > max)
+                        max = array[i];
                     sum = sumPoint - max - min;
                     count += 1;
 
+
                 }
+                jumppoint = (sum / (count - 2)) * array[5] * 3;
+
+                return jumppoint.ToString();
+
             }
 
-            double jumppoint = sum / (count - 2);
-            return jumppoint;
         }
-        ////-----------------
+        public void test(double judge1, double judge2, double judge3, double judge4, double judge5, double judge6)
+        {
+            double x;
+            double y;
+            double z;
+            double q;
+            double w;
+            double v;
+            x = judge1;
+            y = judge2;
+            z = judge3;
+            q = judge4;
+            w = judge5;
+            v = judge6;
+            ////-----------------
+        }
+
     }
-
-
-}
+    }

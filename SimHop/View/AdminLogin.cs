@@ -23,7 +23,7 @@ namespace SimHop
         {
 
             Connection con = new Connection();
-            SqlCommand com = new SqlCommand("SELECT * FROM Admin WHERE username =@user and password = @pw", con.ActiveCon());
+            SqlCommand com = new SqlCommand("SELECT * FROM Admin WHERE username =@user and password = @pw", Connection.ActiveCon());
           
             com.Parameters.AddWithValue("@user", textBox1.Text);
             com.Parameters.AddWithValue("@pw", textBox2.Text);

@@ -21,7 +21,7 @@ namespace SimHop
         private void button1_Click(object sender, EventArgs e)
         {
             Connection con = new Connection();
-            SqlCommand com = new SqlCommand("SELECT * FROM Judges WHERE username =@user and password = @pw", con.ActiveCon());
+            SqlCommand com = new SqlCommand("SELECT * FROM Judges WHERE username =@user and password = @pw", Connection.ActiveCon());
             
             com.Parameters.AddWithValue("@user", textBox1.Text);
             com.Parameters.AddWithValue("@pw", textBox2.Text);

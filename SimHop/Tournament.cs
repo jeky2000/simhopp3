@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Data.SqlClient;
 
 using System.Xml;
 using System.Xml.Serialization;
@@ -39,6 +40,7 @@ namespace SimHop
         {
             _list.Add(diver);
         }
+        
 
 
         public void Remove(int index)
@@ -48,28 +50,13 @@ namespace SimHop
 
         public void SaveToFile()
         {
-            //Stream stream = new FileStream("divers.xml", FileMode.Create, FileAccess.Write, FileShare.Write);
-
-            //XmlSerializer xs = new XmlSerializer(typeof(Tournament));
-            //xs.Serialize(stream, this);
-            //stream.Close();
-
-            //sqlcon.Close();
+            
 
         }
 
         void ITournament.update()
         {
             Connection.ActiveCon();
-        }
-        public void update()
-        {
-            Connection con = new Connection();
-            SqlDataAdapter divers = new SqlDataAdapter("select * from Diver", con.ActiveCon());
-            DataTable dt = new DataTable();
-            divers.Fill(dt);
-            dataGridView1.DataSource = dt;
-
         }
 
 

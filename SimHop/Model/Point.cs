@@ -7,15 +7,9 @@ using System.ComponentModel;
 
 namespace SimHop
 {
-    [Serializable()]
-    public class Tpl
-    {
-        public Judge Judge { get; set; }
-        public double Point { get; set; }
-    }
 
     [Serializable]
-    public class Point : INotifyPropertyChanged, IComparable<Point>
+    public class Point :Diver, INotifyPropertyChanged, IComparable<Point>
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -34,18 +28,41 @@ namespace SimHop
         {
             this.Points = points;
         }
-      
-        public Boolean Valid()
+
+        public string Valid(double judge1, double judge2, double judge3, double judge4, double judge5)
         {
-            if (Points > 0.0 && Points <= 10.0 && Points % 0.5 == 0.0)
-            { 
-                return true;
-            }
-            else
+
+            double[] point = { judge1, judge2, judge3, judge4, judge5 };
+            for (int i = 0; i < 5; i++)
             {
-                return false;
+                if (point[i] >= 0.0 && point[i] <= 10.0 && point[i] % 0.5 == 0.0)
+                {
+                }
+                else
+                {
+                    return "invalid";
+                }
             }
+            return "Sucessful";
         }
+        public void test(double judge1, double judge2, double judge3, double judge4, double judge5, double judge6)
+        {
+            double x;
+            double y;
+            double z;
+            double q;
+            double w;
+            
+            x = judge1;
+            y = judge2;
+            z = judge3;
+            q = judge4;
+            w = judge5;
+            
+            ////-----------------
+        }
+
+
         private double _points;
         public double Points
         {

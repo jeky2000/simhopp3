@@ -7,16 +7,14 @@ using System.Collections.ObjectModel;
 
 namespace SimHop
 {
-    public delegate void DelegateAdd();
-    public delegate void DelegateDelete(int index);
-    public delegate void DelegateSave();
-    public delegate void DelegareRead();
+    public delegate void DelegateLoginJudge();
+    public delegate void DelegateLoginAdmin();
     public interface IForm
     {
-        void AddToDiverList(Collection<Diver> diver);
-        event DelegateAdd EventAdd;
-        event DelegareRead EventRead;
-        event DelegateDelete EventDelete;
-        event DelegateSave EventSave;
+        event DelegateLoginAdmin EventAdmin;
+        event DelegateLoginJudge EventJudge;
+    
+
     }
 }
+

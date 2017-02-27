@@ -12,7 +12,7 @@ namespace SimHop.Tests
     public class TournamentTests
     {
         [TestMethod()]
-        public void TournamentTest()
+        public void AddDiverToTournament()
 
         {
             Tournament t = new Tournament();
@@ -27,7 +27,8 @@ namespace SimHop.Tests
             //Assert.AreEqual("2017", t.Datum);
             //Assert.AreEqual("UFC", t.Name);
         }
-        public void RemoveTest()
+        [TestMethod()]
+        public void RemoveDiverFromTournament()
         {
             Tournament t = new Tournament();
 
@@ -39,18 +40,6 @@ namespace SimHop.Tests
             Assert.AreEqual("sarma", t.List[1].FirstName);
 
         }
-        public void SaveToFileTest()
-        {
-            Assert.Fail();
-        }
-
-
-        public void ReadFromFileTest()
-        {
-            Assert.Fail();
-        }
-
-
 
 
 

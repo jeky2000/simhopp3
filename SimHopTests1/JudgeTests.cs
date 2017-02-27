@@ -12,11 +12,11 @@ namespace SimHop.Tests
     public class JudgeTests
     {
         [TestMethod()]
-        public void JudgeTest()
+        public void AddJudge()
         {
 
             Judge t = new Judge();
-
+           
             t.AddJudge(new Judge() { FirstName = "sarmad" });
             t.AddJudge(new Judge() { FirstName = "sar" });
             t.AddJudge(new Judge() { FirstName = "sarma" });
@@ -26,7 +26,8 @@ namespace SimHop.Tests
 
 
         }
-        public void remove()
+        [TestMethod()]
+        public void removeJudge()
         {
             Judge t = new Judge();
 
