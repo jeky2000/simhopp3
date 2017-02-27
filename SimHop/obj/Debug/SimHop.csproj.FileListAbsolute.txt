@@ -92,3 +92,6 @@ C:\Users\abdullah\Desktop\simhop2\MedNyaInterface\SimHop\obj\Debug\SimHop.Proper
 C:\Users\abdullah\Desktop\simhop2\MedNyaInterface\SimHop\obj\Debug\SimHop.csproj.GenerateResource.Cache
 C:\Users\abdullah\Desktop\simhop2\MedNyaInterface\SimHop\obj\Debug\SimHop.Guest.resources
 C:\Users\abdullah\Desktop\simhop2\MedNyaInterface\SimHop\obj\Debug\SimHop.csprojResolveAssemblyReference.cache
+C:\Users\abdullah\Desktop\SIMHOPP 3\simhopp4\MedNyaInterface\SimHop\bin\Debug\SimHop.exe.config
+C:\Users\abdullah\Desktop\SIMHOPP 3\simhopp4\MedNyaInterface\SimHop\obj\Debug\SimHop.exe
+C:\Users\abdullah\Desktop\SIMHOPP 3\simhopp4\MedNyaInterface\SimHop\obj\Debug\SimHop.pdb
